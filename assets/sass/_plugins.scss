@@ -1,0 +1,228 @@
+/**
+ * Simple Social Icons
+ */
+.header-widget-area {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+
+    @include breakpoint(md) {
+        margin: 0 0 0 .5em;
+        order: 4;
+    }
+
+    .simple-social-icons {
+        margin-bottom: 0;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+
+    section {
+
+    }
+}
+
+.simple-social-icons {
+    ul {
+        li {
+            background: none;
+            border: none;
+            list-style-type: none;
+            margin: 0.5em 0.5em 0 0;
+            padding: 0;
+
+            &:first-of-type {
+                margin-left: 0 !important;
+            }
+
+            &:last-of-type {
+                margin-right: 0 !important;
+            }
+        }
+    }
+}
+
+.share-after {
+    margin-top: 4rem;
+}
+
+/**
+ * Genesis Portfolio Pro
+ */
+.portfolio-contain {
+    width: 100%;
+}
+
+.filter-button-group {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.portfolio-item {
+    width: calc( 33.3333333333% - 30px );
+    margin-bottom: 30px;
+    position: relative;
+
+    a {
+        display: block;
+    }
+
+    .entry-title {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2rem;
+        margin: auto;
+        transition: all .3s ease;
+        text-align: center;
+        color: $white-color;
+        opacity: 0;
+        z-index: 3;
+    }
+
+    img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &:hover {
+        .entry-title  {
+            opacity: 1;
+        }
+
+        &:before {
+            opacity: 1;
+        }
+    }
+
+    &:before {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(35, 44, 57, 0.9);
+        content: '';
+        pointer-events: none;
+        opacity: .1;
+
+        @include transition;
+    }
+}
+
+/**
+ * Genesis Testimonial Slider
+ */
+.lSSlideOuter {
+    img {
+        margin: 0 auto 2rem;
+    }
+}
+
+/**
+ * Genesis eNews Extended
+ */
+.site-footer,
+.sidebar {
+     & .enews {
+        form {
+            position: relative;
+            margin-top: .618em;
+        }
+
+        input {
+            border-radius: 3rem;
+        }
+
+        input[type='submit'] {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 3rem;
+            height: 100%;
+            color: transparent;
+            background: none;
+            box-shadow: none;
+            border: none;
+
+            &:hover + .send-icon, &:focus + .send-icon {
+                opacity: 1;
+            }
+        }
+
+        .send-icon {
+            display: block;
+            position: absolute;
+            right: 1em;
+            bottom: calc(50% / 2);
+            width: 2rem;
+            height: 2rem;
+            margin: 0;
+            opacity: 0.236;
+            background: center/contain no-repeat url(assets/images/paper-plane.svg);
+            pointer-events: none;
+
+            @include transition;
+        }
+    }
+}
+
+/**
+ * Genesis Simple FAQs
+ */
+div.gs-faq {
+
+    @include breakpoint(md) {
+        width: 896px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .gs-faq__question {
+        position: relative;
+        display: block;
+        height: auto;
+        padding: 1em 2em;
+        box-shadow: none;
+        z-index: 1;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1;
+
+        &:after {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 2rem;
+            height: 2rem;
+            content: '';
+            background: center/contain no-repeat url('assets/images/angle-down-solid.svg');
+        }
+
+        &[aria-expanded=true]:after {
+            background: center/contain no-repeat url('assets/images/angle-up-solid.svg');
+        }
+
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+
+    .gs-faq__answer {
+        margin: 0;
+        padding: 2rem;
+        background-color: #ffffff;
+    }
+}

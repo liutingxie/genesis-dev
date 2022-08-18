@@ -1,0 +1,100 @@
+/*
+  Theme Name: Genesis Dev
+  Theme URI: https://providewp.com/genesis-dev/
+  Description: This is the Genesis Dev theme created for the Genesis Framework.
+  Author: Tingxie Liu
+  Author URI: https://providewp.com/
+  Text Domain: genesis-dev
+  Tags: one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-logo, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+  Template: genesis
+  Template Version: 1.0.0
+  License: GPL-2.0+
+  License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+ /*
+    Table of Content
+
+    - HTML5 Reset
+        - Baseline Normalize
+        - Box Sizing
+    - Default
+        - Typographical Elements
+        - Forms
+        - Screen Reader Text
+    - Structure and Layout
+        - Site Containers
+        - Column Widths and Positions
+    - Common Classes
+        - Titles
+    - Skip Links
+    - Site Header
+        - Title Area
+        - Widget Area
+    - Site Navigation
+        - Accessible Menu
+        - Site Header Navigation
+    - Front Page
+        - Front Page 1
+            - Header Image Area
+        - Front Page 2
+        - Front Page 3
+        - Front Page 4
+        - Front Page 5
+        - Front Page 6
+    - Archive Portfolio
+    - Content Area
+        - Entries
+        - Entry Titles
+        - Entry Meta
+        - Entry Content
+        - Entry Footer
+        - Pagination
+        - Comments
+    - Sidebars
+        - Search Form
+        - Tag Cloud
+        - Widgets
+    - Site Footer
+    - Media Queries
+        - min-width: 368px
+        - min-width: 512px
+        - min-width: 768px
+        - min-width: 896px
+        - min-width: 1152px;
+        - min-width: 1280px;
+    - Print Styles
+
+  */
+@import 'utilities';
+@import 'reset';
+@import 'default';
+@import 'layout';
+@import 'common-classes';
+@import 'content-area';
+@import 'fonts';
+@import 'front-page';
+@import 'plugins';
+@import 'print-styles';
+@import 'site-footer';
+@import 'site-header';
+@import 'site-navigation';
+@import 'widgets';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
